@@ -1,0 +1,31 @@
+[project]
+authors = [{name = "Kasper Munch", email = "kaspermunch@birc.au.dk"}]
+dependencies = []
+name = "nnwidget"
+requires-python = ">= 3.11"
+version = "0.1.0"
+
+[build-system]
+build-backend = "hatchling.build"
+requires = ["hatchling"]
+
+[tool.pixi.workspace]
+channels = ["conda-forge"]
+platforms = ["osx-arm64"]
+
+[tool.pixi.pypi-dependencies]
+nnwidget = { path = ".", editable = true }
+
+[tool.pixi.tasks]
+
+[tool.pixi.dependencies]
+graphviz = ">=12.2.1,<13"
+ipywidgets = ">=8.1.7,<9"
+numpy = ">=2.2.6,<3"
+matplotlib = ">=3.10.3,<4"
+plotly = ">=6.1.2,<7"
+nodejs = ">=22.13.0,<22.14"
+jupyterlab = ">=4.4.3,<5"
+git = ">=2.49.0,<3"
+python-graphviz = ">=0.20.3,<0.21"
+pydot = ">=4.0.0,<5"

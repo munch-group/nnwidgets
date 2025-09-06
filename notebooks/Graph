@@ -1,0 +1,14 @@
+digraph {
+	graph [margin="0!" nodesep=1.0 rankdir=LR ranksep=1.0 size="4!"]
+	I [label=I fontsize="25px" labelloc=t shape=circle width=1.5]
+	A [label=A fontsize="25px" labelloc=t shape=circle width=1.5]
+	C [label=C fontsize="25px" labelloc=t shape=circle width=1.5]
+	B [label=B fontsize="25px" labelloc=t shape=circle width=1.5]
+	O [label=O fontsize="25px" labelloc=t shape=circle width=1.5]
+	I -> A
+	I -> C
+	I -> B
+	A -> O
+	C -> O
+	B -> O
+}
